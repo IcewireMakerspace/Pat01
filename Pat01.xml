@@ -1,9 +1,16 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="expansion_gripper" id="1" inline="true" x="17" y="100">
-    <value name="NUMBER">
-      <block type="math_number" id="2">
-        <field name="NUM">90</field>
+  <block type="movement_forward" id="37" x="10" y="45">
+    <next>
+      <block type="robot_delay" id="48" inline="true">
+        <value name="DELAY">
+          <block type="math_number" id="55">
+            <field name="NUM">500</field>
+          </block>
+        </value>
+        <next>
+          <block type="movement_stop" id="65"></block>
+        </next>
       </block>
-    </value>
+    </next>
   </block>
 </xml>
