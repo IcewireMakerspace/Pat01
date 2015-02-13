@@ -15,22 +15,24 @@
         </value>
       </block>
     </statement>
-  </block>
-  <block type="controls_whileUntil" id="565" inline="false" x="-323" y="10">
-    <field name="MODE">UNTIL</field>
-    <value name="NUMBER">
-      <block type="sensor_object" id="572">
-        <field name="OBJECT">RIGHTFRONT</field>
-      </block>
-    </value>
-    <statement name="DO">
-      <block type="movement_rightmotor" id="589" inline="true">
-        <value name="MOVRIGHT">
-          <block type="math_number" id="616">
-            <field name="NUM">100</field>
+    <next>
+      <block type="controls_whileUntil" id="565" inline="false">
+        <field name="MODE">UNTIL</field>
+        <value name="NUMBER">
+          <block type="sensor_object" id="572">
+            <field name="OBJECT">RIGHTFRONT</field>
           </block>
         </value>
+        <statement name="DO">
+          <block type="movement_rightmotor" id="589" inline="true">
+            <value name="MOVRIGHT">
+              <block type="math_number" id="616">
+                <field name="NUM">100</field>
+              </block>
+            </value>
+          </block>
+        </statement>
       </block>
-    </statement>
+    </next>
   </block>
 </xml>
