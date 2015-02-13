@@ -1,5 +1,6 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <block type="controls_if" id="671" inline="false" x="-225" y="-139">
+    <mutation else="1"></mutation>
     <value name="IF0">
       <block type="sensor_button" id="687">
         <field name="OBJECT">UP</field>
@@ -18,6 +19,9 @@
           </block>
         </next>
       </block>
+    </statement>
+    <statement name="ELSE">
+      <block type="movement_right" id="862"></block>
     </statement>
     <next>
       <block type="controls_if" id="766" inline="false">
