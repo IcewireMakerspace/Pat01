@@ -2,7 +2,7 @@
   <block type="expansion_gripper" id="1" inline="true" x="17" y="100">
     <value name="NUMBER">
       <block type="math_number" id="2">
-        <field name="NUM">180</field>
+        <field name="NUM">90</field>
       </block>
     </value>
   </block>
