@@ -8,7 +8,25 @@
           </block>
         </value>
         <next>
-          <block type="movement_stop" id="65"></block>
+          <block type="movement_stop" id="65">
+            <next>
+              <block type="expansion_servopower" id="71">
+                <field name="SERVO">ON</field>
+                <next>
+                  <block type="expansion_gripper" id="82" inline="true">
+                    <value name="NUMBER">
+                      <block type="math_number" id="89">
+                        <field name="NUM">10</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="movement_stop" id="111"></block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
         </next>
       </block>
     </next>
