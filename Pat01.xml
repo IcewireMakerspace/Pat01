@@ -20,7 +20,7 @@
                   <block type="movement_stop" id="65">
                     <next>
                       <block type="expansion_servopower" id="71">
-                        <field name="SERVO">ON</field>
+                        <field name="SERVO">OFF</field>
                         <next>
                           <block type="expansion_gripper" id="82" inline="true">
                             <value name="NUMBER">
