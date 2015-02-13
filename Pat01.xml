@@ -1,19 +1,17 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_whileUntil" id="313" inline="false" x="-169" y="125">
-    <field name="MODE">UNTIL</field>
-    <value name="NUMBER">
-      <block type="sensor_object" id="349">
-        <field name="OBJECT">LEFTFRONT</field>
-      </block>
-    </value>
-    <statement name="DO">
-      <block type="movement_rightmotor" id="361" inline="true">
-        <value name="MOVRIGHT">
-          <block type="math_number" id="394">
-            <field name="NUM">100</field>
+  <block type="expansion_servopower" id="406" x="-155" y="-71">
+    <field name="SERVO">ON</field>
+    <next>
+      <block type="expansion_gripper" id="412" inline="true">
+        <value name="NUMBER">
+          <block type="math_number" id="437">
+            <field name="NUM">180</field>
           </block>
         </value>
+        <next>
+          <block type="movement_stop" id="447"></block>
+        </next>
       </block>
-    </statement>
+    </next>
   </block>
 </xml>
