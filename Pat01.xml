@@ -8,37 +8,19 @@
           </block>
         </value>
         <next>
-          <block type="movement_right" id="130">
+          <block type="movement_stop" id="65">
             <next>
-              <block type="robot_delay" id="132" inline="true">
-                <value name="DELAY">
-                  <block type="math_number" id="145">
-                    <field name="NUM">1000</field>
-                  </block>
-                </value>
+              <block type="expansion_servopower" id="71">
+                <field name="SERVO">ON</field>
                 <next>
-                  <block type="movement_stop" id="65">
-                    <next>
-                      <block type="expansion_servopower" id="71">
-                        <field name="SERVO">ON</field>
-                        <next>
-                          <block type="expansion_gripper" id="82" inline="true">
-                            <value name="NUMBER">
-                              <block type="math_number" id="89">
-                                <field name="NUM">80</field>
-                              </block>
-                            </value>
-                            <next>
-                              <block type="expansion_servopower" id="151">
-                                <field name="SERVO">OFF</field>
-                                <next>
-                                  <block type="movement_stop" id="111"></block>
-                                </next>
-                              </block>
-                            </next>
-                          </block>
-                        </next>
+                  <block type="expansion_gripper" id="82" inline="true">
+                    <value name="NUMBER">
+                      <block type="math_number" id="89">
+                        <field name="NUM">80</field>
                       </block>
+                    </value>
+                    <next>
+                      <block type="movement_stop" id="111"></block>
                     </next>
                   </block>
                 </next>
