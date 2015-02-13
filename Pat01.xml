@@ -1,31 +1,22 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="expansion_servopower" id="500" x="-157" y="-142">
-    <field name="SERVO">ON</field>
+  <block type="expansion_gripper" id="412" inline="true" x="-152" y="-173">
+    <value name="NUMBER">
+      <block type="math_number" id="437">
+        <field name="NUM">180</field>
+      </block>
+    </value>
     <next>
-      <block type="expansion_gripper" id="456" inline="true">
-        <value name="NUMBER">
-          <block type="math_number" id="469">
-            <field name="NUM">0</field>
-          </block>
-        </value>
+      <block type="expansion_servopower" id="500">
+        <field name="SERVO">ON</field>
         <next>
-          <block type="movement_stop" id="494">
-            <next>
-              <block type="expansion_servopower" id="406">
-                <field name="SERVO">ON</field>
-                <next>
-                  <block type="expansion_gripper" id="412" inline="true">
-                    <value name="NUMBER">
-                      <block type="math_number" id="437">
-                        <field name="NUM">180</field>
-                      </block>
-                    </value>
-                    <next>
-                      <block type="movement_stop" id="447"></block>
-                    </next>
-                  </block>
-                </next>
+          <block type="expansion_gripper" id="456" inline="true">
+            <value name="NUMBER">
+              <block type="math_number" id="469">
+                <field name="NUM">0</field>
               </block>
+            </value>
+            <next>
+              <block type="movement_stop" id="447"></block>
             </next>
           </block>
         </next>
