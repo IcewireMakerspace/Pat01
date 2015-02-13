@@ -1,7 +1,7 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="expansion_gripper" id="197" inline="true" x="-20" y="190">
+  <block type="expansion_gripper" id="1" inline="true" x="17" y="100">
     <value name="NUMBER">
-      <block type="math_number" id="213">
+      <block type="math_number" id="2">
         <field name="NUM">180</field>
       </block>
     </value>
