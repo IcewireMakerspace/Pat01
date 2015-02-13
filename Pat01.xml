@@ -11,14 +11,19 @@
         <next>
           <block type="movement_stop" id="447">
             <next>
-              <block type="expansion_gripper" id="456" inline="true">
-                <value name="NUMBER">
-                  <block type="math_number" id="469">
-                    <field name="NUM">0</field>
-                  </block>
-                </value>
+              <block type="expansion_servopower" id="500">
+                <field name="SERVO">ON</field>
                 <next>
-                  <block type="movement_stop" id="494"></block>
+                  <block type="expansion_gripper" id="456" inline="true">
+                    <value name="NUMBER">
+                      <block type="math_number" id="469">
+                        <field name="NUM">0</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="movement_stop" id="494"></block>
+                    </next>
+                  </block>
                 </next>
               </block>
             </next>
