@@ -1,1 +1,9 @@
-<xml xmlns="http://www.w3.org/1999/xhtml"></xml>
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="expansion_gripper" id="197" inline="true" x="-20" y="190">
+    <value name="NUMBER">
+      <block type="math_number" id="213">
+        <field name="NUM">180</field>
+      </block>
+    </value>
+  </block>
+</xml>
