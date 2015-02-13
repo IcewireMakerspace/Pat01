@@ -20,7 +20,7 @@
                   <block type="movement_stop" id="65">
                     <next>
                       <block type="expansion_servopower" id="71">
-                        <field name="SERVO">OFF</field>
+                        <field name="SERVO">ON</field>
                         <next>
                           <block type="expansion_gripper" id="82" inline="true">
                             <value name="NUMBER">
@@ -29,7 +29,21 @@
                               </block>
                             </value>
                             <next>
-                              <block type="movement_stop" id="111"></block>
+                              <block type="expansion_servopower" id="151">
+                                <field name="SERVO">OFF</field>
+                                <next>
+                                  <block type="expansion_gripper" id="171" inline="true">
+                                    <value name="NUMBER">
+                                      <block type="sensor_object" id="159">
+                                        <field name="OBJECT">RIGHTSIDE</field>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="movement_stop" id="111"></block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
                             </next>
                           </block>
                         </next>
