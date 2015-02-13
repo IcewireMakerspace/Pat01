@@ -1,35 +1,43 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_whileUntil" id="515" inline="false" x="-168" y="-116">
-    <field name="MODE">UNTIL</field>
-    <value name="NUMBER">
-      <block type="sensor_object" id="543">
-        <field name="OBJECT">LEFTFRONT</field>
+  <block type="controls_if" id="671" inline="false" x="-225" y="-139">
+    <value name="IF0">
+      <block type="sensor_button" id="687">
+        <field name="OBJECT">UP</field>
       </block>
     </value>
-    <statement name="DO">
-      <block type="movement_rightmotor" id="606" inline="true">
-        <value name="MOVRIGHT">
-          <block type="math_number" id="639">
-            <field name="NUM">100</field>
+    <statement name="DO0">
+      <block type="expansion_servopower" id="707">
+        <field name="SERVO">ON</field>
+        <next>
+          <block type="expansion_gripper" id="713" inline="true">
+            <value name="NUMBER">
+              <block type="math_number" id="742">
+                <field name="NUM">180</field>
+              </block>
+            </value>
           </block>
-        </value>
+        </next>
       </block>
     </statement>
     <next>
-      <block type="controls_whileUntil" id="565" inline="false">
-        <field name="MODE">UNTIL</field>
-        <value name="NUMBER">
-          <block type="sensor_object" id="572">
-            <field name="OBJECT">RIGHTFRONT</field>
+      <block type="controls_if" id="766" inline="false">
+        <value name="IF0">
+          <block type="sensor_button" id="773">
+            <field name="OBJECT">DOWN</field>
           </block>
         </value>
-        <statement name="DO">
-          <block type="movement_rightmotor" id="589" inline="true">
-            <value name="MOVRIGHT">
-              <block type="math_number" id="616">
-                <field name="NUM">100</field>
+        <statement name="DO0">
+          <block type="expansion_servopower" id="779">
+            <field name="SERVO">ON</field>
+            <next>
+              <block type="expansion_gripper" id="785" inline="true">
+                <value name="NUMBER">
+                  <block type="math_number" id="792">
+                    <field name="NUM">0</field>
+                  </block>
+                </value>
               </block>
-            </value>
+            </next>
           </block>
         </statement>
       </block>
